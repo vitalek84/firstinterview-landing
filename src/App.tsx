@@ -255,7 +255,7 @@ const Footer = () => (
 
 function App() {
   return (
-    <div className="min-h-screen bg-white selection:bg-accent/30 selection:text-primary">
+    <div className="min-h-screen bg-white selection:bg-accent/30 selection:text-primary" style={{ zoom: '0.8' }}>
       <Navbar />
       <main>
         <Hero />
