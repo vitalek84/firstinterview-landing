@@ -11,14 +11,14 @@ import Roles from './components/Roles';
 // --- Components ---
 
 const Navbar = () => {
-  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[20px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
+  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[1.25rem] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
-        <div className="flex justify-between items-center h-[72px]">
+        <div className="flex justify-between items-center h-[4.5rem]">
           <div className="flex items-center h-full">
-            <a href="#" className="font-sans text-[36px] leading-[29px] tracking-[-2px] text-[#155DFC] flex items-center">
+            <a href="#" className="font-sans text-[2.25rem] leading-[1.2] tracking-[-2px] text-[#155DFC] flex items-center">
               <span className="font-normal">First</span>
               <span className="font-black">Interview</span>
             </a>
@@ -54,10 +54,10 @@ const Hero = () => (
     />
     
     <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10 text-center">
-      <h1 className="font-display font-extrabold text-5xl md:text-6xl lg:text-[69px] leading-[1.1] tracking-tight text-dark-secondary mb-6 max-w-4xl mx-auto">
+      <h1 className="font-display font-extrabold text-5xl md:text-6xl lg:text-[4.3125rem] leading-[1.1] tracking-tight text-dark-secondary mb-6 max-w-4xl mx-auto">
         Practice your first interview.
       </h1>
-      <p className="font-sans text-xl md:text-2xl lg:text-[28px] text-dark-secondary mb-10 max-w-3xl mx-auto">
+      <p className="font-sans text-xl md:text-2xl lg:text-[1.75rem] text-dark-secondary mb-10 max-w-3xl mx-auto">
         A 15-minute AI mock interview tailored to your CV
       </p>
       

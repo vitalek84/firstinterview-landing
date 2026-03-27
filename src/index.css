@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    /* Scales down all rem-based Tailwind classes by 20% */
+    font-size: 80%;
+  }
+}
