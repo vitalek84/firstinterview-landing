@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
         <div className="flex justify-between items-center h-[72px]">
           <div className="flex items-center h-full">
             <a href="#" className="font-sans text-[36px] leading-[29px] tracking-[-2px] text-[#155DFC] flex items-center">
@@ -53,7 +53,7 @@ const Hero = () => (
       }}
     />
     
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10 text-center">
       <h1 className="font-display font-extrabold text-5xl md:text-6xl lg:text-[69px] leading-[1.1] tracking-tight text-dark-secondary mb-6 max-w-4xl mx-auto">
         Practice your first interview.
       </h1>
@@ -96,7 +96,7 @@ const Hero = () => (
 
 const About = () => (
   <section id="about" className="py-24 bg-section-gradient">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
       <h2 className="font-display font-bold text-4xl md:text-5xl text-center text-dark mb-16">
         About Us
       </h2>
@@ -199,7 +199,7 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="py-24 bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto px-8 sm:px-12 lg:px-16">
         <h2 className="font-display font-bold text-4xl md:text-5xl text-center text-dark mb-16">
           Frequently Asked Questions
         </h2>
@@ -215,7 +215,7 @@ const FAQ = () => {
 
 const Footer = () => (
   <footer id="contact" className="bg-primary pt-20 pb-6">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         <div>
           <a href="#" className="font-sans text-4xl font-normal tracking-tighter text-white block mb-6">
@@ -237,7 +237,7 @@ const Footer = () => (
     </div>
     
     <div className="bg-dark-footer py-6 mt-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex items-center space-x-4 text-sm font-display text-white/80">
           <span>firstinterview.ai</span>
           <span className="text-gray-500">|</span>
