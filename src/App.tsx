@@ -14,7 +14,7 @@ import Roles from './components/Roles';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[16px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
+  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[12px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
   const mobileNavLinkClass = "block w-full text-left px-6 py-4 font-sans font-medium text-[18px] text-[#0A0A0A] border-b border-gray-100 hover:bg-gray-50";
 
   return (
