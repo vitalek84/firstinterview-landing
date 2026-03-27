@@ -11,7 +11,7 @@ import Roles from './components/Roles';
 // --- Components ---
 
 const Navbar = () => {
-  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[1.25rem] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
+  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[1.0rem] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
