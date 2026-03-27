@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { 
-  CheckCircle2, 
   ChevronDown,
   ArrowRight,
   Play
@@ -61,7 +60,9 @@ const Hero = () => (
           "Role-specific questions"
         ].map((text, i) => (
           <div key={i} className="flex items-center gap-2">
-            <CheckCircle2 className="w-6 h-6 text-accent" />
+            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
+              <path d="M13.7741 21.2104L6.4718 14.0057L10.2861 10.2421L13.7743 13.6834L22.6572 4.91891L26.4718 8.68254L13.7741 21.2104Z" fill="#00C0F5"/>
+            </svg>
             <span className="font-sans text-lg text-dark-secondary">{text}</span>
           </div>
         ))}
