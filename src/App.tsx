@@ -18,8 +18,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-[72px]">
           <div className="flex items-center h-full">
-            <a href="#" className="font-sans text-3xl font-normal tracking-tighter text-primary">
-              FirstInterview<span className="text-accent">.ai</span>
+            <a href="#" className="font-sans text-[36px] leading-[29px] tracking-[-2px] text-[#155DFC] flex items-center">
+              <span className="font-normal">First</span>
+              <span className="font-extrabold">Interview</span>
             </a>
           </div>
           <div className="hidden md:flex items-center h-full space-x-2">
