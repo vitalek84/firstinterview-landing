@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center h-full">
             <a href="#" className="font-sans text-[36px] leading-[29px] tracking-[-2px] text-[#155DFC] flex items-center">
               <span className="font-normal">First</span>
-              <span className="font-extrabold">Interview</span>
+              <span className="font-black">Interview</span>
             </a>
           </div>
           <div className="hidden md:flex items-center h-full space-x-2">
