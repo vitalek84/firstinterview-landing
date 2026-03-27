@@ -65,16 +65,16 @@ const Roles = () => {
         <h2 className="font-display font-bold text-4xl md:text-5xl text-center text-dark mb-16">
           Roles Supported
         </h2>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {roles.map((role, i) => (
-            <div key={i} className="flex flex-col items-center text-center w-full sm:w-[280px] p-6 rounded-2xl hover:bg-gray-50 transition-colors duration-300">
-              <div className="w-16 h-16 rounded-2xl bg-accent-transparent flex items-center justify-center mb-6">
+            <div key={i} className="flex flex-col items-start text-left w-full p-4 rounded-2xl hover:bg-gray-50 transition-colors duration-300">
+              <div className="mb-6">
                 {role.icon}
               </div>
               <h3 className="font-sans font-medium text-lg text-dark mb-3">
                 {role.title}
               </h3>
-              <p className="font-sans text-base text-gray-500 leading-relaxed">
+              <p className="font-sans text-sm text-gray-500 leading-relaxed">
                 {role.desc}
               </p>
             </div>
