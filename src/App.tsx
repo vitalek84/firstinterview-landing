@@ -11,12 +11,12 @@ import Roles from './components/Roles';
 // --- Components ---
 
 const Navbar = () => {
-  const navLinkClass = "flex items-center h-full px-4 font-sans font-medium text-[20px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[#00C0F5]/5 hover:border-[#155DFC] transition-colors";
+  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[20px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-[72px]">
           <div className="flex items-center h-full">
             <a href="#" className="font-sans text-3xl font-normal tracking-tighter text-primary">
               FirstInterview<span className="text-accent">.ai</span>
