@@ -10,32 +10,39 @@ import Roles from './components/Roles';
 
 // --- Components ---
 
-const Navbar = () => (
-  <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex justify-between items-center h-20">
-        <div className="flex items-center">
-          <a href="#" className="font-sans text-3xl font-normal tracking-tighter text-primary">
-            FirstInterview<span className="text-accent">.ai</span>
-          </a>
-        </div>
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="font-sans font-medium text-dark hover:text-primary transition-colors">How It Works</a>
-          <a href="#roles" className="font-sans font-medium text-dark hover:text-primary transition-colors">Roles Supported</a>
-          <a href="#about" className="font-sans font-medium text-dark hover:text-primary transition-colors">About</a>
-          <a href="#faq" className="font-sans font-medium text-dark hover:text-primary transition-colors">FAQ</a>
-          <a href="#contact" className="font-sans font-medium text-dark hover:text-primary transition-colors">Contact</a>
-          <button className="bg-primary hover:bg-primary-hover text-white font-sans font-semibold py-2.5 px-6 rounded-lg transition-all shadow-btn hover:shadow-lg transform hover:-translate-y-0.5">
-            Start Practicing
-          </button>
+const Navbar = () => {
+  const navLinkClass = "flex items-center h-full px-4 font-sans font-medium text-[20px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[#00C0F5]/5 hover:border-[#155DFC] transition-colors";
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          <div className="flex items-center h-full">
+            <a href="#" className="font-sans text-3xl font-normal tracking-tighter text-primary">
+              FirstInterview<span className="text-accent">.ai</span>
+            </a>
+          </div>
+          <div className="hidden md:flex items-center h-full space-x-2">
+            <a href="#home" className={navLinkClass}>Home</a>
+            <a href="#how-it-works" className={navLinkClass}>How It Works</a>
+            <a href="#roles" className={navLinkClass}>Roles Supported</a>
+            <a href="#about" className={navLinkClass}>About</a>
+            <a href="#faq" className={navLinkClass}>FAQ</a>
+            <a href="#contact" className={navLinkClass}>Contact</a>
+            <div className="pl-4 flex items-center h-full">
+              <button className="bg-primary hover:bg-primary-hover text-white font-sans font-semibold py-2.5 px-6 rounded-lg transition-all shadow-btn hover:shadow-lg transform hover:-translate-y-0.5">
+                Start Practicing
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-);
+    </nav>
+  );
+};
 
 const Hero = () => (
-  <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+  <section id="home" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
     {/* Background matching Rectangle 97022 */}
     <div 
       className="absolute inset-0 -z-10"
