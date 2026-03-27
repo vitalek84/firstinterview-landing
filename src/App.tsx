@@ -36,7 +36,16 @@ const Navbar = () => (
 );
 
 const Hero = () => (
-  <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-hero-gradient">
+  <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    {/* Background matching Rectangle 97022 */}
+    <div 
+      className="absolute inset-0 -z-10"
+      style={{
+        background: 'linear-gradient(180deg, #FEFFFF 0%, #F0F6FF 100%)',
+        transform: 'rotate(-180deg)'
+      }}
+    />
+    
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
       <h1 className="font-display font-extrabold text-5xl md:text-6xl lg:text-[69px] leading-[1.1] tracking-tight text-dark-secondary mb-6 max-w-4xl mx-auto">
         Practice your first interview.
