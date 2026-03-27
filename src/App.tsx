@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { 
   ChevronDown,
   ArrowRight,
-  Play
+  Play,
+  Menu,
+  X
 } from 'lucide-react';
 import HowItWorks from './components/HowItWorks';
 import Scoring from './components/Scoring';
@@ -11,33 +13,66 @@ import Roles from './components/Roles';
 // --- Components ---
 
 const Navbar = () => {
-  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[12px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navLinkClass = "flex items-center justify-center h-full px-4 font-sans font-medium text-[16px] text-[#0A0A0A] border-b-2 border-transparent hover:bg-[rgba(0,192,245,0.05)] hover:border-b-[#155DFC] transition-all box-border";
+  const mobileNavLinkClass = "block w-full text-left px-6 py-4 font-sans font-medium text-[18px] text-[#0A0A0A] border-b border-gray-100 hover:bg-gray-50";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
         <div className="flex justify-between items-center h-[4.5rem]">
-          <div className="flex items-center h-full">
+          {/* Logo and Desktop Nav Links */}
+          <div className="flex items-center h-full gap-12">
             <a href="#" className="font-sans text-[2.25rem] leading-[1.2] tracking-[-2px] text-[#155DFC] flex items-center">
               <span className="font-normal">First</span>
               <span className="font-black">Interview</span>
             </a>
-          </div>
-          <div className="hidden md:flex items-center h-full space-x-2">
-            <a href="#home" className={navLinkClass}>Home</a>
-            <a href="#how-it-works" className={navLinkClass}>How It Works</a>
-            <a href="#roles" className={navLinkClass}>Roles Supported</a>
-            <a href="#about" className={navLinkClass}>About</a>
-            <a href="#faq" className={navLinkClass}>FAQ</a>
-            <a href="#contact" className={navLinkClass}>Contact</a>
-            <div className="pl-4 flex items-center h-full">
-              <button className="bg-primary hover:bg-primary-hover text-white font-sans font-semibold py-2.5 px-6 rounded-lg transition-all shadow-btn hover:shadow-lg transform hover:-translate-y-0.5">
-                Start Practicing
-              </button>
+            <div className="hidden md:flex items-center h-full space-x-2">
+              <a href="#home" className={navLinkClass}>Home</a>
+              <a href="#how-it-works" className={navLinkClass}>How It Works</a>
+              <a href="#roles" className={navLinkClass}>Roles Supported</a>
+              <a href="#about" className={navLinkClass}>About</a>
+              <a href="#faq" className={navLinkClass}>FAQ</a>
+              <a href="#contact" className={navLinkClass}>Contact</a>
             </div>
+          </div>
+          
+          {/* Desktop Button */}
+          <div className="hidden md:flex items-center h-full">
+            <button className="bg-[#155DFC] hover:bg-blue-700 text-white font-sans font-semibold py-2.5 px-6 rounded-lg transition-all shadow-btn hover:shadow-lg transform hover:-translate-y-0.5">
+              Start Practicing
+            </button>
+          </div>
+
+          {/* Mobile Menu Toggle & Button */}
+          <div className="flex md:hidden items-center gap-4">
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+              className="text-gray-800 p-1 focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+            </button>
+            <button className="bg-[#155DFC] hover:bg-blue-700 text-white font-sans font-semibold py-2 px-4 rounded-lg text-sm transition-all">
+              Get Started
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white border-b border-gray-200 shadow-lg absolute top-[4.5rem] left-0 right-0 max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+          <div className="flex flex-col py-2">
+            <a href="#home" className={mobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Home</a>
+            <a href="#how-it-works" className={mobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>How It Works</a>
+            <a href="#roles" className={mobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Roles Supported</a>
+            <a href="#about" className={mobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>About</a>
+            <a href="#faq" className={mobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>FAQ</a>
+            <a href="#contact" className={mobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
@@ -53,34 +88,34 @@ const Hero = () => (
       }}
     />
     
-    <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10 text-center">
+    <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 relative z-10 text-center">
       <h1 className="font-display font-extrabold text-5xl md:text-6xl lg:text-[4.3125rem] leading-[1.1] tracking-tight text-dark-secondary mb-6 max-w-4xl mx-auto">
         Practice your first interview.
       </h1>
       <p className="font-sans text-xl md:text-2xl lg:text-[1.75rem] text-dark-secondary mb-10 max-w-3xl mx-auto">
-        A 15-minute AI mock interview tailored to your CV
+        A 15-minute AI mock interview tailored to your CV and role.
       </p>
       
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
+      <div className="flex flex-col sm:flex-row justify-center items-start sm:items-center gap-4 sm:gap-8 mb-12 max-w-fit mx-auto">
         {[
-          "Tailored to your CV",
-          "Real-time feedback",
-          "Role-specific questions"
+          "Answer out loud.",
+          "Get scored on 4 dimensions.",
+          "Results emailed to you."
         ].map((text, i) => (
-          <div key={i} className="flex items-center gap-2">
-            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6">
-              <path d="M13.7741 21.2104L6.4718 14.0057L10.2861 10.2421L13.7743 13.6834L22.6572 4.91891L26.4718 8.68254L13.7741 21.2104Z" fill="#00C0F5"/>
+          <div key={i} className="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 flex-shrink-0">
+              <path d="M20 6L9 17L4 12" stroke="#00C0F5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="font-sans text-lg text-dark-secondary">{text}</span>
+            <span className="font-sans text-lg md:text-xl text-dark-secondary">{text}</span>
           </div>
         ))}
       </div>
 
       <div className="flex flex-col items-center">
-        <button className="group relative inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary-hover text-white font-sans font-semibold text-lg py-4 px-10 rounded-xl transition-all shadow-btn hover:shadow-xl transform hover:-translate-y-1 overflow-hidden">
+        <button className="group relative inline-flex items-center justify-center gap-3 bg-[#155DFC] hover:bg-blue-700 text-white font-sans font-semibold text-lg py-4 px-10 rounded-xl transition-all shadow-btn hover:shadow-xl transform hover:-translate-y-1 overflow-hidden">
           <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
           <span className="relative">Start Practicing FREE</span>
-          <Play className="w-5 h-5 relative fill-current" />
+          <ArrowRight className="w-5 h-5 relative" />
         </button>
         <p className="mt-4 font-sans font-medium text-sm text-gray-600">
           Free. No credit card. Just 15 minutes.
