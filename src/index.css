@@ -1,10 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Urbanist', ui-sans-serif, system-ui, sans-serif;
+
+  --color-fi-blue: #155dfc;
+  --color-fi-cyan: #00c0f5;
+  --color-fi-ink: #0a0a0a;
+  --color-fi-body: #111111;
+  --color-fi-muted: #4a5565;
+  --color-fi-muted-2: #666666;
+  --color-fi-border: #d3d3d3;
+  --color-fi-footer: #0f2351;
+  --color-fi-faq-bg: #f9fafb;
+  --color-fi-icon-bg: #e6f9ff;
+  --color-fi-icon-tint: rgb(0 192 245 / 0.1);
+  --color-fi-card-icon: rgb(0 192 245 / 0.1);
+  --color-fi-footer-muted: #99a1af;
+  --color-fi-about: #717182;
+
+  --shadow-fi-card: 2px 8px 12px 0 rgb(0 0 0 / 0.09);
+  --shadow-fi-cta: 0px 4px 6px -4px rgb(0 0 0 / 0.1), 0px 10px 15px -3px rgb(0 0 0 / 0.1);
+}
 
 @layer base {
   html {
-    /* Scales down all rem-based Tailwind classes by 20% */
-    font-size: 80%;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
