@@ -65,7 +65,7 @@ export function Header() {
       <div className="mx-auto flex h-14 max-w-[1280px] items-center gap-3 px-3 sm:h-[72px] sm:gap-4 sm:px-6 lg:px-10">
         <a
           href="#top"
-          className="shrink-0 font-display text-base font-semibold leading-none tracking-tight text-fi-cyan sm:text-[2rem]"
+          className="shrink-0 font-display text-[1.25rem] font-semibold leading-none tracking-tight text-fi-cyan sm:text-[2rem]"
         >
           firstinterview.ai
         </a>
@@ -80,7 +80,7 @@ export function Header() {
             aria-controls="mobile-navigation"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           >
-            <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" aria-hidden>
+            <svg viewBox="0 0 20 20" className="h-6 w-6" fill="none" aria-hidden>
               <path
                 d={isMobileMenuOpen ? 'M5 5l10 10M15 5L5 15' : 'M4 6h12M4 10h12M4 14h12'}
                 stroke="currentColor"
@@ -119,7 +119,7 @@ export function Header() {
 
           <a
             href="https://app.firstinterview.ai"
-            className="shrink-0 rounded-md bg-fi-blue px-3 py-1.5 text-xs font-semibold text-white shadow-[var(--shadow-fi-cta)] transition-opacity hover:opacity-90 sm:rounded-lg sm:px-5 sm:py-2.5 sm:text-sm"
+            className="shrink-0 rounded-md bg-fi-blue px-3 py-1.5 text-xs font-semibold text-white shadow-[var(--shadow-fi-cta)] transition-colors hover:bg-[var(--color-fi-blue-hover)] active:bg-[var(--color-fi-blue-hover)] sm:rounded-lg sm:px-5 sm:py-2.5 sm:text-sm"
           >
             <span className="sm:hidden">Get Started</span>
             <span className="hidden sm:inline">Start Practicing</span>

@@ -4,7 +4,7 @@ import { ScorecardIcon } from './ScorecardIcon'
 
 const steps = [
   {
-    title: 'Step 1\nSign up and\nupload your CV',
+    title: 'Step 1\nSign up and upload your CV',
     body: 'Enter your email, link your LinkedIn and/or GitHub, select your role, and upload your CV.',
     icon: <UploadIcon />,
   },
@@ -15,7 +15,7 @@ const steps = [
   },
   {
     title: 'Step 3\nGet your scorecard',
-    body: 'Scored on 4 dimensions out of 10 with specific feedback. Emailed to you.',
+    body: 'Get feedback across 4 dimensions with specific tips to improve. Emailed to you.',
     icon: <ScorecardIcon />,
   },
 ]

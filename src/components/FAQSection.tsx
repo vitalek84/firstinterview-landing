@@ -7,27 +7,27 @@ const faqs = [
   },
   {
     q: 'Do I need to prepare?',
-    a: 'No. Just upload your CV and answer the questions.',
+    a: 'No. Just have your CV ready to upload. The AI generates questions based on your experience and role, so there is nothing to study in advance.',
   },
   {
     q: 'Is it really free?',
-    a: 'Yes. No credit card required.',
+    a: 'Yes. Completely free. No credit card, no hidden fees, no trial period.',
   },
   {
     q: 'Why do you need my LinkedIn or GitHub?',
-    a: 'We want real professionals, not bots. Your profile is never shared without your permission.',
+    a: 'To verify that you are a real person with a real professional background.',
   },
   {
     q: 'What happens to my data?',
-    a: 'Your CV and answers are used only to generate your scorecard. We do not sell your data. You can request deletion at any time.',
+    a: 'Your video and audio recordings are deleted within 72 hours. Your transcript, CV, scorecard, name, email, and profile URLs are retained for up to 24 months. We do not share your data with hiring companies unless you separately choose to opt in. You can request full deletion at any time by emailing support@firstinterview.ai. See our Privacy Policy for full details.',
   },
   {
     q: 'Will I get my results?',
-    a: 'Yes. Your scorecard is emailed to you.',
+    a: 'Yes. Your scorecard with feedback across all four dimensions will be emailed to you after the interview.',
   },
   {
     q: 'What roles are supported?',
-    a: 'Software Engineers, DevOps Engineers, Data & AI Experts, Product Managers, and Project Managers.',
+    a: 'Software Engineers (Frontend, Backend, Full-Stack, Mobile, QA), DevOps Engineers, Data and AI roles (Data Engineers, Data Scientists, ML/AI Engineers, Analytics), Product Managers, and Project Managers (including Scrum Masters, Agile Coaches, and Delivery Managers).',
   },
 ]
 

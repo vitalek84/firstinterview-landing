@@ -21,16 +21,16 @@ export function AboutSection() {
           */}
           <div className="flex flex-col gap-6 text-[17px] font-normal leading-[1.6] text-[#555555] sm:text-[18px]">
             <p>
-              We are building intelligent tools that help hiring teams work smarter, faster, and more
-              efficiently. Our AI-powered platform is designed to support HR professionals by automating
-              the early stages of candidate screening and with that, reducing manual workload and
-              allowing teams to focus on what truly matters: people.
+              We built firstinterview.ai to help candidates prepare for real interviews. Upload your CV, 
+              answer questions out loud for 15 minutes, and get honest feedback on what you did well 
+              and what to work on.
             </p>
             <p>
-              By combining advanced artificial intelligence with practical HR workflows, we streamline
-              the process of reviewing applications, identifying top candidates, and ensuring a
-              consistent and fair initial evaluation. Our solution saves time, reduces operational
-              costs, and improves the overall hiring experience for both recruiters and applicants.
+              The questions are tailored to your background and role, 
+              so the practice feels like a real first-round interview. 
+              Whether you are actively job hunting or just want to sharpen your interview skills, 
+              this is a low-pressure way to get better. 
+              Your practice also helps us improve the quality and accuracy of the AI over time.
             </p>
           </div>
 
@@ -41,24 +41,21 @@ export function AboutSection() {
           <div className="flex flex-col gap-8 text-[17px] font-normal leading-[1.6] text-[#555555] sm:text-[18px]">
             <div>
               {/* Increased subheading size (text-[22px]) and made it bold */}
-              <h3 className="mb-2 font-display text-[22px] font-semibold text-fi-ink sm:text-[24px]">
+              <h3 className="mb-2 font-display text-[22px] font-semibold text-[#555555] sm:text-[24px]">
                 Our Mission
               </h3>
               <p>
-                Our mission is to empower HR teams with intelligent technology that simplifies
-                recruitment without losing the human touch. We aim to eliminate repetitive tasks,
-                reduce bias in early screening, and enable faster, data-driven hiring decisions.
+                Help candidates walk into their next interview more prepared, 
+                more confident, and more aware of how they come across.
               </p>
             </div>
             <div>
-              <h3 className="mb-2 font-display text-[22px] font-semibold text-fi-ink sm:text-[24px]">
+              <h3 className="mb-2 font-display text-[22px] font-semibold text-[#555555] sm:text-[24px]">
                 Our Vision
               </h3>
               <p>
-                We envision a future where recruitment is seamless, efficient, and accessible—where AI
-                and human expertise work together to unlock potential. Our goal is to become a trusted
-                partner for organizations worldwide, transforming how companies discover, evaluate, and
-                connect with talent.
+                Make quality interview practice accessible to everyone, regardless of 
+                where they are or what stage of their career they are in.
               </p>
             </div>
           </div>

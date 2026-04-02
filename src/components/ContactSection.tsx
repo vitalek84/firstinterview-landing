@@ -1,6 +1,6 @@
 export function ContactSection() {
 return (
-    <section id="contact" className="w-full bg-[#1A61FF] py-16 text-white sm:py-20">
+    <section id="contact" className="w-full bg-[#1A61FF] py-8 text-white sm:py-10">
       
       {/* 
         Changed md:items-end to md:items-center. 
@@ -22,10 +22,7 @@ return (
             Added inline <span> tags for the specific bolded phrases.
           */}
           <p className="text-[16px] font-light leading-[1.6] sm:text-[17px]">
-            <span className="font-semibold">We are building intelligent tools that help hiring teams</span>{" "}
-            work smarter, faster, and more efficiently. Our AI-powered platform is designed to support HR professionals by automating the early stages of
-            candidate screening and with that, reducing manual workload and allowing teams to{" "}
-            <span className="font-semibold">focus on what truly matters: people.</span>
+            We built firstinterview.ai to help candidates practice and prepare for real interviews. Free. No credit card. Just 15 minutes.
           </p>
 
         </div>
@@ -33,10 +30,10 @@ return (
         {/* Right Side: Email positioned correctly */}
         <div>
           <a 
-            href="mailto:support@firstinterview.com" 
+            href="mailto:upport@firstinterview.ai" 
             className="text-[16px] font-medium transition-opacity hover:opacity-80 sm:text-[17px]"
           >
-            support@firstinterview.com
+            support@firstinterview.ai
           </a>
         </div>
 
