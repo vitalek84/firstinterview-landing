@@ -1,4 +1,4 @@
-export function SoftwareEngineerIcon({ className = "" }: { className?: string }) {
+export function SoftwareEngineerIcon() {
   return (
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M32 36L44 24L32 12" stroke="#00C0F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

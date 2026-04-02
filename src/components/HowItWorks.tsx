@@ -6,17 +6,17 @@ const steps = [
   {
     title: 'Step 1\nSign up and\nupload your CV',
     body: 'Enter your email, link your LinkedIn and/or GitHub, select your role, and upload your CV.',
-    icon: <UploadIcon className="size-14" />,
+    icon: <UploadIcon />,
   },
   {
     title: 'Step 2\nDo the interview',
     body: 'Answer out loud for 15 minutes. Questions tailored to your experience and core role knowledge.',
-    icon: <InterviewIcon className="size-12" />,
+    icon: <InterviewIcon  />,
   },
   {
     title: 'Step 3\nGet your scorecard',
     body: 'Scored on 4 dimensions out of 10 with specific feedback. Emailed to you.',
-    icon: <ScorecardIcon className="size-12" />,
+    icon: <ScorecardIcon />,
   },
 ]
 

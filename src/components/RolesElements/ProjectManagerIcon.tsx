@@ -1,4 +1,4 @@
-export function ProjectManagerIcon({ className = "" }: { className?: string }) {
+export function ProjectManagerIcon() {
   return (
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M30 4H18C16.8954 4 16 4.89543 16 6V10C16 11.1046 16.8954 12 18 12H30C31.1046 12 32 11.1046 32 10V6C32 4.89543 31.1046 4 30 4Z" stroke="#00C0F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

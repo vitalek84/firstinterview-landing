@@ -1,4 +1,4 @@
-export function DataAiExpertIcon({ className = "" }: { className?: string }) {
+export function DataAiExpertIcon() {
   return (
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24 16C33.9411 16 42 13.3137 42 10C42 6.68629 33.9411 4 24 4C14.0589 4 6 6.68629 6 10C6 13.3137 14.0589 16 24 16Z" stroke="#00C0F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

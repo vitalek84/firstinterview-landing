@@ -8,27 +8,27 @@ const roles = [
   {
     title: 'Software Engineers',
     lines: 'Frontend, Backend, Fullstack, Mobile, QA',
-    icon: <SoftwareEngineerIcon className="size-6" />,
+    icon: <SoftwareEngineerIcon  />,
   },
   {
     title: 'DevOps Engineers',
     lines: 'Cloud, Infrastructure, SRE, Platform Engineering',
-    icon: <DevOpsEngineerIcon className="size-6" />,
+    icon: <DevOpsEngineerIcon />,
   },
   {
     title: 'Data & AI Experts',
     lines: 'Data Engineers, Data Scientists, ML/AI Engineers, Analytics',
-    icon: <DataAiExpertIcon className="size-6" />,
+    icon: <DataAiExpertIcon  />,
   },
   {
     title: 'Product Managers',
     lines: 'Product Managers, Product Owners',
-    icon: <ProductManagerIcon className="size-6" />,
+    icon: <ProductManagerIcon />,
   },
   {
     title: 'Project Managers',
     lines: 'Project Managers, Scrum Masters, Agile Coaches, Delivery Managers',
-    icon: <ProjectManagerIcon className="size-6" />,
+    icon: <ProjectManagerIcon />,
   },
 ]
 

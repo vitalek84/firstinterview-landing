@@ -1,4 +1,4 @@
-export function DevOpsEngineerIcon({ className = "" }: { className?: string }) {
+export function DevOpsEngineerIcon() {
   return (
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M40 4H8C5.79086 4 4 5.79086 4 8V16C4 18.2091 5.79086 20 8 20H40C42.2091 20 44 18.2091 44 16V8C44 5.79086 42.2091 4 40 4Z" stroke="#00C0F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
